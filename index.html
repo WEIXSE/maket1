@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splendour Art - Interior Art Studio</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .hero-gradient {
+          background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C4A484",
+              secondary: "#1B4B73",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-['Cormorant_Garamond']">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md"
+    >
+      <nav class="flex items-center justify-between px-8 py-4">
+        <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+        <div class="flex items-center gap-8 text-lg">
+          <a href="#" class="hover:text-primary transition-colors">Main</a>
+          <a href="#" class="hover:text-primary transition-colors">About us</a>
+          <a href="#" class="hover:text-primary transition-colors">Catalog</a>
+          <a href="#" class="hover:text-primary transition-colors">Contacts</a>
+        </div>
+      </nav>
+    </header>
+    <section
+      class="relative min-h-screen flex items-center"
+      style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20interior%20design%20studio%20with%20elegant%20furniture%20and%20decor%2C%20soft%20natural%20lighting%20coming%20from%20large%20windows%2C%20neutral%20color%20palette%20with%20gold%20accents%2C%20high-end%20modern%20aesthetic%2C%20clean%20lines%20and%20minimalist%20approach%2C%20professional%20photography%20style&width=1920&height=1080&seq=1&orientation=landscape')"
+    >
+      <div class="absolute inset-0 hero-gradient"></div>
+      <div class="container mx-auto px-8 relative">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl font-['Playfair_Display'] font-bold mb-6">
+            Splendour Art — Bespoke Interior Masterpieces
+          </h1>
+          <p class="text-xl mb-8 font-light">
+            Transform your space into a timeless masterpiece with our bespoke artistic creations. Each piece is meticulously crafted to elevate your interior's aesthetic to new heights.
+          </p>
+          <button
+            class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-primary/90 transition-colors"
+          >
+          Commission Your Art
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-8">
+        <div class="flex gap-16 items-center">
+          <div class="w-1/2">
+            <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-8">
+              About Us
+            </h2>
+            <p class="text-lg mb-6">
+              At the heart of our work lies the belief that beauty can carry spirit — that form, texture, and light can become vessels for meaning.
+Each piece is created with an intuitive attention to that delicate threshold where the physical meets the eternal, and where materials begin to speak without words.
+            </p>
+            <p class="text-lg mb-8">
+              Our studio creates bespoke decorative artworks — from classical paintings and textured wall panels to intricate, one-of-a-kind compositions in advanced mixed media.
+            </p>
+            <p class="text-lg mb-8">
+            We work with plaster, mirrors, gold leaf, glass painting, glaze, semi-precious stones, Swarovski crystals, and cubic zirconia, combining these elements to craft pieces that exist as single originals — never repeated.
+            </p>
+            <div class="grid grid-cols-3 gap-8">
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                >
+                  <i class="ri-palette-line text-2xl text-primary"></i>
+                </div>
+                <h3 class="font-semibold mb-2">Уникальный дизайн</h3>
+              </div>
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                >
+                  <i class="ri-brush-line text-2xl text-primary"></i>
+                </div>
+                <h3 class="font-semibold mb-2">Ручная работа</h3>
+              </div>
+              <div class="text-center">
+                <div
+                  class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                >
+                  <i class="ri-star-line text-2xl text-primary"></i>
+                </div>
+                <h3 class="font-semibold mb-2">Премиум качество</h3>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/2">
+            <div class="relative rounded-full overflow-hidden aspect-square">
+              <img
+                src="https://readdy.ai/api/search-image?query=elegant%20female%20artist%20in%20her%20luxurious%20art%20studio%2C%20wearing%20sophisticated%20attire%2C%20surrounded%20by%20high-end%20art%20materials%20and%20finished%20artworks%2C%20professional%20portrait%20photography%20with%20soft%20natural%20lighting&width=800&height=800&seq=2&orientation=squarish"
+                alt="Анастасия Темкина"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-gray-50">
+      <div class="container mx-auto px-8">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-bold text-center mb-16"
+        >
+        Our work
+        </h2>
+        <div class="grid grid-cols-3 gap-8">
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=luxury%20abstract%20art%20piece%20with%20gold%20leaf%20and%20crystal%20elements%2C%20neutral%20colors%2C%20elegant%20composition%2C%20high-end%20interior%20art%2C%20professional%20art%20photography&width=600&height=600&seq=3&orientation=squarish"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <p class="text-white text-xl">Golden Harmony</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20minimalist%20art%20installation%20with%20metallic%20accents%20and%20crystal%20elements%2C%20sophisticated%20design%2C%20luxury%20interior%20piece%2C%20professional%20art%20photography&width=600&height=600&seq=4&orientation=squarish"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <p class="text-white text-xl">Crystal Symphony</p>
+            </div>
+          </div>
+          <div class="group relative aspect-square overflow-hidden rounded-lg">
+            <img
+              src="https://readdy.ai/api/search-image?query=contemporary%20wall%20art%20with%20precious%20materials%2C%20elegant%20abstract%20design%2C%20luxury%20interior%20decoration%2C%20professional%20art%20photography&width=600&height=600&seq=5&orientation=squarish"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <p class="text-white text-xl">Eternal Sunshine</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button
+            class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-primary/90 transition-colors"
+          >
+          Watch more
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-8">
+        <h2
+          class="text-4xl font-['Playfair_Display'] font-bold text-center mb-16"
+        >
+        Contact us
+        </h2>
+        <div class="max-w-2xl mx-auto">
+          <form class="space-y-6">
+            <div>
+              <input
+                type="text"
+                placeholder="Your name"
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary"
+              />
+            </div>
+            <div>
+              <textarea
+                placeholder="Your message"
+                rows="4"
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-primary/90 transition-colors"
+              >
+              Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-8">
+        <div class="text-center mb-8">
+          <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+          <p class="mt-4 text-gray-400">
+            Inspired by the splendor of creation, guided by eternal light
+          </p>
+        </div>
+        <div class="flex justify-center gap-6 mb-8">
+          <a href="#" class="hover:text-primary transition-colors">
+            <i class="ri-instagram-line text-xl"></i>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors">
+            <i class="ri-facebook-line text-xl"></i>
+          </a>
+          <a href="#" class="hover:text-primary transition-colors">
+            <i class="ri-pinterest-line text-xl"></i>
+          </a>
+        </div>
+        <div class="text-center text-gray-400">
+          <p>&copy; 2025 Splendour Art. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 0) {
+            header.classList.add("shadow-md");
+          } else {
+            header.classList.remove("shadow-md");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
