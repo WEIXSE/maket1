@@ -61,6 +61,18 @@
               full: "9999px",
               button: "8px",
             },
+            fontSize: {
+              'xs': '0.75rem',
+              'sm': '0.875rem',
+              'base': '1rem',
+              'lg': '1.125rem',
+              'xl': '1.25rem',
+              '2xl': '1.5rem',
+              '3xl': '1.875rem',
+              '4xl': '2.25rem',
+              '5xl': '3rem',
+              '6xl': '4rem',
+            }
           },
         },
       };
@@ -70,13 +82,13 @@
     <header
       class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md"
     >
-      <nav class="flex items-center justify-between px-8 py-4">
-        <a href="#" class="h-10">
+      <nav class="flex items-center justify-between px-4 md:px-8 py-4">
+        <a href="#" class="h-8 md:h-10">
           <img src="logo.jpg" alt="Splendour Art Logo" class="h-full">
         </a>
-        <div class="flex items-center gap-8 text-lg">
+        <div class="flex items-center gap-4 md:gap-8 text-sm md:text-lg">
           <a href="#main" class="hover:text-primary transition-colors duration-300">Main</a>
-          <a href="#about" class="hover:text-primary transition-colors duration-300">About us</a>
+          <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
           <a href="#works" class="hover:text-primary transition-colors duration-300">Catalog</a>
           <a href="#contacts" class="hover:text-primary transition-colors duration-300">Contacts</a>
         </div>
@@ -88,18 +100,18 @@
       style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20interior%20design%20studio%20with%20elegant%20furniture%20and%20decor%2C%20soft%20natural%20lighting%20coming%20from%20large%20windows%2C%20neutral%20color%20palette%20with%20gold%20accents%2C%20high-end%20modern%20aesthetic%2C%20clean%20lines%20and%20minimalist%20approach%2C%20professional%20photography%20style&width=1920&height=1080&seq=1&orientation=landscape')"
     >
       <div class="absolute inset-0 hero-gradient"></div>
-      <div class="container mx-auto px-8 relative">
+      <div class="container mx-auto px-4 md:px-8 relative">
         <div class="max-w-2xl">
-          <p class="text-primary text-lg mb-2">Inspired by the splendor of creation, guided by eternal light</p>
-          <h1 class="text-5xl font-['Playfair_Display'] font-bold mb-6">
+          <p class="text-primary text-base md:text-lg mb-2">Inspired by the splendor of creation, guided by eternal light</p>
+          <h1 class="text-3xl md:text-5xl font-['Playfair_Display'] font-bold mb-4 md:mb-6">
             Splendour Art — Bespoke Interior Masterpieces
           </h1>
-          <p class="text-xl mb-8 font-light">
+          <p class="text-base md:text-xl mb-6 md:mb-8 font-light">
             Transform your space into a timeless masterpiece with our bespoke artistic creations. Each piece is meticulously crafted to elevate your interior's aesthetic to new heights.
           </p>
           <a
             href="#contacts"
-            class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-primary/90 transition-colors duration-300 pulse inline-block"
+            class="!rounded-button bg-primary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg hover:bg-primary/90 transition-colors duration-300 pulse inline-block"
           >
           Commission Your Art
           </a>
@@ -107,73 +119,72 @@
       </div>
     </section>
 
-    <section id="about" class="py-24 bg-white">
-      <div class="container mx-auto px-8">
-        <div class="flex gap-16 items-center">
-          <div class="w-1/2">
-            <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-8">
+    <section id="about" class="py-12 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <h2 class="text-3xl md:text-4xl font-['Playfair_Display'] font-bold mb-6 md:mb-8">
               About Us
             </h2>
-            <p class="text-lg mb-6">
+            <p class="text-base md:text-lg mb-4 md:mb-6">
               Inspired by the Splendour of Creation, Guided by Eternal Light
             </p>
-            <p class="text-lg mb-8">
+            <p class="text-base md:text-lg mb-4 md:mb-6">
               Splendour Art is an interior art studio founded by artist Anastasia Temkina.
             </p>
-            <p class="text-lg mb-8">
+            <p class="text-base md:text-lg mb-4 md:mb-6">
               At the heart of our work lies the belief that beauty can carry spirit — that form, texture, and light can become vessels for meaning.
             </p>
-            <p class="text-lg mb-8">
+            <p class="text-base md:text-lg mb-4 md:mb-6">
               Each piece is created with an intuitive attention to that delicate threshold where the physical meets the eternal, and where materials begin to speak without words.
             </p>
-          </p>
-          <p class="text-lg mb-8">
-            Our studio creates bespoke decorative artworks — from classical paintings and textured wall panels to intricate, one-of-a-kind compositions in advanced mixed media.
-          </p>
-          <p class="text-lg mb-8">
-            We work with plaster, mirrors, gold leaf, glass painting, glaze, semi-precious stones, Swarovski crystals, and cubic zirconia, combining these elements to craft pieces that exist as single originals — never repeated.
-          </p>
-          <p class="text-lg mb-8">
-            We produce works of any size, from intimate accents to large-scale panels that replicate the natural splendour of stone slices, tailored to complement both private and public interiors.
-          </p>
-          <p class="text-lg mb-8">
-            Every commissioned artwork is developed in close dialogue with the client. Together, we select tones, finishes, and materials, ensuring that the final piece resonates not only with the space, but with the person who will live alongside it.
-          </p>
-          <p class="text-lg mb-8">
-            One of our studio’s distinct features is the creation of art suitable for humid Asian climates. A protective glazed finish allows the artworks to be placed in moist environments — such as bathrooms or spa areas — and remain pristine for decades.
-          </p>
-            <div class="grid grid-cols-3 gap-8">
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              Our studio creates bespoke decorative artworks — from classical paintings and textured wall panels to intricate, one-of-a-kind compositions in advanced mixed media.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              We work with plaster, mirrors, gold leaf, glass painting, glaze, semi-precious stones, Swarovski crystals, and cubic zirconia, combining these elements to craft pieces that exist as single originals — never repeated.
+            </p>
+            <p class="text-base md:text-lg mb-4 md:mb-6">
+              We produce works of any size, from intimate accents to large-scale panels that replicate the natural splendour of stone slices, tailored to complement both private and public interiors.
+            </p>
+            <p class="text-base md:text-lg mb-6 md:mb-8">
+              Every commissioned artwork is developed in close dialogue with the client. Together, we select tones, finishes, and materials, ensuring that the final piece resonates not only with the space, but with the person who will live alongside it.
+            </p>
+            <p class="text-base md:text-lg mb-6 md:mb-8">
+              One of our studio's distinct features is the creation of art suitable for humid Asian climates. A protective glazed finish allows the artworks to be placed in moist environments — such as bathrooms or spa areas — and remain pristine for decades.
+            </p>
+            <div class="grid grid-cols-3 gap-4 md:gap-8">
               <div class="text-center">
                 <div
-                  class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                  class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 md:mb-4 rounded-full bg-primary/10 flex items-center justify-center"
                 >
-                  <i class="ri-palette-line text-2xl text-primary"></i>
+                  <i class="ri-palette-line text-xl md:text-2xl text-primary"></i>
                 </div>
-                <h3 class="font-semibold mb-2">Unique design</h3>
+                <h3 class="font-semibold text-sm md:text-base mb-2">Unique design</h3>
               </div>
               <div class="text-center">
                 <div
-                  class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                  class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 md:mb-4 rounded-full bg-primary/10 flex items-center justify-center"
                 >
-                  <i class="ri-brush-line text-2xl text-primary"></i>
+                  <i class="ri-brush-line text-xl md:text-2xl text-primary"></i>
                 </div>
-                <h3 class="font-semibold mb-2">Handmade work</h3>
+                <h3 class="font-semibold text-sm md:text-base mb-2">Handmade work</h3>
               </div>
               <div class="text-center">
                 <div
-                  class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center"
+                  class="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2 md:mb-4 rounded-full bg-primary/10 flex items-center justify-center"
                 >
-                  <i class="ri-star-line text-2xl text-primary"></i>
+                  <i class="ri-star-line text-xl md:text-2xl text-primary"></i>
                 </div>
-                <h3 class="font-semibold mb-2">Premium quality</h3>
+                <h3 class="font-semibold text-sm md:text-base mb-2">Premium quality</h3>
               </div>
             </div>
           </div>
-          <div class="w-1/2">
+          <div class="w-full md:w-1/2 order-1 md:order-2 mb-8 md:mb-0">
             <div class="relative rounded-lg overflow-hidden aspect-square">
               <img
                 src="https://readdy.ai/api/search-image?query=elegant%20female%20artist%20in%20her%20luxurious%20art%20studio%2C%20wearing%20sophisticated%20attire%2C%20surrounded%20by%20high-end%20art%20materials%20and%20finished%20artworks%2C%20professional%20portrait%20photography%20with%20soft%20natural%20lighting&width=800&height=800&seq=2&orientation=squarish"
-                alt="Анастасия Темкина"
+                alt="Anastasia Temkina"
                 class="w-full h-full object-cover"
               />
             </div>
@@ -182,16 +193,14 @@
       </div>
     </section>
 
-    <section id="works" class="py-24 bg-gray-50">
-      <div class="container mx-auto px-8">
-        <h2
-          class="text-4xl font-['Playfair_Display'] font-bold text-center mb-16"
-        >
-        Our work
+    <section id="works" class="py-12 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-3xl md:text-4xl font-['Playfair_Display'] font-bold text-center mb-8 md:mb-16">
+          Our work
         </h2>
         
-        <h3 class="text-2xl font-['Playfair_Display'] font-semibold mb-8 text-center">Mixed Media</h3>
-        <div class="grid grid-cols-3 gap-8 mb-16">
+        <h3 class="text-xl md:text-2xl font-['Playfair_Display'] font-semibold mb-6 md:mb-8 text-center">Mixed Media</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           <div class="group relative aspect-square overflow-hidden rounded-lg">
             <img
               src="https://readdy.ai/api/search-image?query=luxury%20abstract%20art%20piece%20with%20gold%20leaf%20and%20crystal%20elements%2C%20neutral%20colors%2C%20elegant%20composition%2C%20high-end%20interior%20art%2C%20professional%20art%20photography&width=600&height=600&seq=3&orientation=squarish"
@@ -200,7 +209,7 @@
             <div
               class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
             >
-              <p class="text-white text-xl">Golden Harmony</p>
+              <p class="text-white text-lg md:text-xl">Golden Harmony</p>
             </div>
           </div>
           <div class="group relative aspect-square overflow-hidden rounded-lg">
@@ -211,7 +220,7 @@
             <div
               class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
             >
-              <p class="text-white text-xl">Crystal Symphony</p>
+              <p class="text-white text-lg md:text-xl">Crystal Symphony</p>
             </div>
           </div>
           <div class="group relative aspect-square overflow-hidden rounded-lg">
@@ -222,13 +231,13 @@
             <div
               class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
             >
-              <p class="text-white text-xl">Eternal Sunshine</p>
+              <p class="text-white text-lg md:text-xl">Eternal Sunshine</p>
             </div>
           </div>
         </div>
         
-        <h3 class="text-2xl font-['Playfair_Display'] font-semibold mb-8 text-center">Texture Art</h3>
-        <div class="grid grid-cols-3 gap-8">
+        <h3 class="text-xl md:text-2xl font-['Playfair_Display'] font-semibold mb-6 md:mb-8 text-center">Texture Art</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <div class="group relative aspect-square overflow-hidden rounded-lg">
             <img
               src="https://readdy.ai/api/search-image?query=textured%20wall%20art%20with%20plaster%20and%20gold%20leaf%2C%20minimalist%20design%2C%20luxury%20interior%20decoration%2C%20professional%20photography&width=600&height=600&seq=6&orientation=squarish"
@@ -237,7 +246,7 @@
             <div
               class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
             >
-              <p class="text-white text-xl">Textured Elegance</p>
+              <p class="text-white text-lg md:text-xl">Textured Elegance</p>
             </div>
           </div>
           <div class="group relative aspect-square overflow-hidden rounded-lg">
@@ -248,7 +257,7 @@
             <div
               class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
             >
-              <p class="text-white text-xl">Plaster Poetry</p>
+              <p class="text-white text-lg md:text-xl">Plaster Poetry</p>
             </div>
           </div>
           <div class="group relative aspect-square overflow-hidden rounded-lg">
@@ -259,31 +268,29 @@
             <div
               class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
             >
-              <p class="text-white text-xl">Metallic Texture</p>
+              <p class="text-white text-lg md:text-xl">Metallic Texture</p>
             </div>
           </div>
         </div>
         
-        <div class="text-center mt-12">
-          <button
+        <div class="text-center mt-8 md:mt-12">
+          <a
             href="#contacts"
-            class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-primary/90 transition-colors duration-300"
+            class="!rounded-button bg-primary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg hover:bg-primary/90 transition-colors duration-300 inline-block"
           >
           Commission Your Art
-          </button>
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="contacts" class="py-24 bg-white">
-      <div class="container mx-auto px-8">
-        <h2
-          class="text-4xl font-['Playfair_Display'] font-bold text-center mb-16"
-        >
-        Contact us
+    <section id="contacts" class="py-12 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-8">
+        <h2 class="text-3xl md:text-4xl font-['Playfair_Display'] font-bold text-center mb-8 md:mb-16">
+          Contact us
         </h2>
         <div class="max-w-2xl mx-auto">
-          <form id="contact-form" class="space-y-6">
+          <form id="contact-form" class="space-y-4 md:space-y-6">
             <div>
               <input
                 type="text"
@@ -291,7 +298,7 @@
                 name="name"
                 placeholder="Your name"
                 required
-                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300"
+                class="w-full px-4 py-2 md:py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 text-base"
               />
             </div>
             <div>
@@ -301,7 +308,7 @@
                 name="email"
                 placeholder="Your email address"
                 required
-                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300"
+                class="w-full px-4 py-2 md:py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 text-base"
               />
             </div>
             <div>
@@ -311,13 +318,13 @@
                 placeholder="Your message"
                 rows="4"
                 required
-                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300"
+                class="w-full px-4 py-2 md:py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 text-base"
               ></textarea>
             </div>
             <div class="text-center">
               <button
                 type="submit"
-                class="!rounded-button bg-primary text-white px-8 py-3 text-lg hover:bg-primary/90 transition-colors duration-300"
+                class="!rounded-button bg-primary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg hover:bg-primary/90 transition-colors duration-300"
               >
               Send
               </button>
@@ -325,15 +332,15 @@
             <div id="form-message" class="text-center hidden"></div>
           </form>
           
-          <div class="mt-16 text-center">
-            <h3 class="text-2xl font-['Playfair_Display'] font-semibold mb-6">Or contact us directly</h3>
-            <div class="flex justify-center gap-8">
-              <a href="mailto:Splendour.art.sg@gmail.com" class="flex items-center gap-2 hover:text-primary transition-colors duration-300">
-                <i class="ri-mail-line text-2xl"></i>
+          <div class="mt-8 md:mt-16 text-center">
+            <h3 class="text-xl md:text-2xl font-['Playfair_Display'] font-semibold mb-4 md:mb-6">Or contact us directly</h3>
+            <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 items-center">
+              <a href="mailto:Splendour.art.sg@gmail.com" class="flex items-center gap-2 hover:text-primary transition-colors duration-300 text-base md:text-lg">
+                <i class="ri-mail-line text-xl md:text-2xl"></i>
                 <span>Splendour.art.sg@gmail.com</span>
               </a>
-              <a href="https://wa.me/+6580104004" class="flex items-center gap-2 hover:text-primary transition-colors duration-300">
-                <i class="ri-whatsapp-line text-2xl"></i>
+              <a href="https://wa.me/+6580104004" class="flex items-center gap-2 hover:text-primary transition-colors duration-300 text-base md:text-lg">
+                <i class="ri-whatsapp-line text-xl md:text-2xl"></i>
                 <span>WhatsApp</span>
               </a>
             </div>
@@ -342,25 +349,25 @@
       </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-8">
-        <div class="text-center mb-8">
-          <a href="#" class="inline-block h-12">
+    <footer class="bg-gray-900 text-white py-8 md:py-12">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="text-center mb-6 md:mb-8">
+          <a href="#" class="inline-block h-8 md:h-12">
             <img src="logo.jpg" alt="Splendour Art Logo" class="h-full">
           </a>
         </div>
-        <div class="flex justify-center gap-6 mb-8">
+        <div class="flex justify-center gap-4 md:gap-6 mb-6 md:mb-8">
           <a href="#" class="hover:text-primary transition-colors duration-300">
-            <i class="ri-instagram-line text-xl"></i>
+            <i class="ri-instagram-line text-lg md:text-xl"></i>
           </a>
           <a href="#" class="hover:text-primary transition-colors duration-300">
-            <i class="ri-facebook-line text-xl"></i>
+            <i class="ri-facebook-line text-lg md:text-xl"></i>
           </a>
           <a href="#" class="hover:text-primary transition-colors duration-300">
-            <i class="ri-pinterest-line text-xl"></i>
+            <i class="ri-pinterest-line text-lg md:text-xl"></i>
           </a>
         </div>
-        <div class="text-center text-gray-400">
+        <div class="text-center text-gray-400 text-sm md:text-base">
           <p>&copy; 2025 Splendour Art. All rights reserved.</p>
         </div>
       </div>
